@@ -16,10 +16,10 @@ dependencies {
 
     mappings("net.fabricmc:yarn:1.21.4+build.1:v2")
 
-    modImplementation("net.fabricmc:fabric-loader:0.16.2")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:0.117.0+1.21.4")
+    modImplementation("net.fabricmc:fabric-loader:0.15.11")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.92.0+1.21.4")
 
-    modCompileOnly("net.caffeinemc.sodium:sodium-fabric:0.6.0+mc1.21.4")
+    modCompileOnly("net.caffeinemc.sodium:sodium-fabric:0.5.8+mc1.21.4")
 }
 
 processResources {
