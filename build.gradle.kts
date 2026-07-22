@@ -1,15 +1,6 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        maven("https://maven.fabricmc.net/")
-        maven("https://plugins.gradle.org/m2/")
-    }
-    dependencies {
-        classpath("net.fabricmc:fabric-loom:0.14")
-    }
+plugins {
+    id("fabric-loom") version("1.2.0")
 }
-
-apply(plugin = "fabric-loom")
 
 version = "1.0.0"
 group = "com.s1mple.performance"
