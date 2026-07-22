@@ -5,7 +5,7 @@ buildscript {
         maven("https://plugins.gradle.org/m2/")
     }
     dependencies {
-        classpath("net.fabricmc:fabric-loom:1.3")
+        classpath("net.fabricmc:fabric-loom:0.12")
     }
 }
 
