@@ -1,0 +1,36 @@
+plugins {
+    id("fabric-loom") version("1.8.9")
+}
+
+version = "1.0.0"
+group = "com.s1mple.performance"
+
+repositories {
+    mavenCentral()
+    maven("https://maven.fabricmc.net/")
+    maven("https://maven.cafemc.org/sodium/")
+}
+
+dependencies {
+    minecraft("com.mojang:minecraft:1.21.4")
+
+    mappings("net.fabricmc:yarn:1.21.4+build.2:v2")
+
+    modImplementation("net.fabricmc:fabric-loader:0.16.2")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.118.0+1.21.4")
+
+    modCompileOnly("net.caffeinemc.sodium:sodium-fabric:0.6.0+mc1.21.4")
+}
+
+processResources {
+    inputs.property("version", project.version)
+    inputs.property("fabricid", "s1mple-performance")
+
+    filesMatching("fabric.mod.json") {
+        expand(project.properties)
+    }
+}
+
+tasks.jar {
+    archiveFileName.set("S1MPLEPerformance-Client-${project.version}.jar")
+}
