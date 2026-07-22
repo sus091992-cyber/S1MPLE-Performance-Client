@@ -1,0 +1,1 @@
+rootProject.name = "S1MPLE-Performance-Client"
