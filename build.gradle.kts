@@ -1,5 +1,5 @@
 plugins {
-    id("fabric-loom") version("1.8.9")
+    id("fabric-loom") version "1.8.9"
 }
 
 version = "1.0.0"
@@ -8,7 +8,7 @@ group = "com.s1mple.performance"
 repositories {
     mavenCentral()
     maven("https://maven.fabricmc.net/")
-    maven("https://maven.cafemc.org/sodium/")
+    maven("https://maven.caffeinemc.org/sodium/")
 }
 
 dependencies {
