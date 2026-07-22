@@ -1,0 +1,7 @@
+{
+  "fabric": {
+    "mixin": {
+      "default": "s1mple-performance.mixins.json"
+    }
+  }
+}

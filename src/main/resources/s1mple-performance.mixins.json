@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "package": "com.s1mple.performance.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PerformanceOptimizationMixin"
+  ]
+}
