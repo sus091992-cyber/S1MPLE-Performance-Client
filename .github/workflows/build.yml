@@ -2,8 +2,7 @@ name: Build and Release S1MPLE Performance Client
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [ 'main' ]
   workflow_dispatch:
     inputs:
       version:
