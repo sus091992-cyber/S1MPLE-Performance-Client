@@ -31,6 +31,14 @@ dependencies {
     modCompileOnly("net.caffeinemc.sodium:sodium-fabric:0.6.0+mc1.21.4")
 }
 
+loom {
+    runConfigs {
+        "client" {
+            ideConfigGenerated(true)
+        }
+    }
+}
+
 processResources {
     inputs.property("version", project.version)
     inputs.property("fabricid", "s1mple-performance")
@@ -42,4 +50,10 @@ processResources {
 
 tasks.jar {
     archiveFileName.set("S1MPLEPerformance-Client-${project.version}.jar")
+}
+
+tasks.register("printJarPath") {
+    doLast {
+        println(tasks.jar.get().archiveFile.get().asFile.absolutePath)
+    }
 }
