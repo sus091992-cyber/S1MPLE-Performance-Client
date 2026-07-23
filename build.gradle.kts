@@ -1,5 +1,5 @@
 plugins {
-    id("fabric-loom") version("1.8.0")
+    id("fabric-loom") version("1.17.16")
 }
 
 version = "1.0.0"
